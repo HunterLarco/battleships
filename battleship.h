@@ -12,11 +12,14 @@ class BattleShip {
   public:
     int health;
     string name;
+    bool attack();
     bool isHit();
     bool collision();
     bool isSunk();
+    static numOfShips;
 
   private:
+    block blocks::array:empty; 
     bool getCoordinates();
 
 };

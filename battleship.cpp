@@ -1,28 +1,37 @@
 #include "battleship.h"
 #include <string>
+#include <tuple>
 
 // Contructor
-Ship::Ship ( int health, string name ) {
+Battleship::Battleship ( int health, string name, int attackPower) {
     
-    this->origin = originPoint;
-    this->orientation = orientationDirection;
-    this->length = lengthValue;
-    
-    for ( int i = 0; i < lengthValue; i++ ) {
-        
-        point p;
-        
-        if( orientationDirection == HORIZONTAL ) {
-            
-            p.setX ( originPoint.getX() + i );
-            p.setY ( originPoint.getY ( ) );
-        }
-        else {
-            
-            p.setX ( originPoint.getX ( ) );
-            p.setY ( originPoint.getY ( ) + i );
-        }
-        
-        points << p;
-    }
+  this->health = health;
+  this->name = name;
+  this->attackPower = attackPower;
+  // private attribute
+  this->blocks::array = make_tuple(block.coordinate_x, block.coordinate_y);
+}
+
+// Private Functions
+int Battleship::getCoordinates() {
+  // return coordinates of the individual blocks
+  return Battleship.blocks
+}
+
+// Public Functions
+bool Battleship::isHit() {
+  // bool, true if ship was hit or not
+}
+
+bool Battleship::collision() {
+  // checks whether ships are colliding or not
+}
+
+bool Battleship::isSunk() {
+    // checks whether a ship has sunk or not
+  if(Battleship.health <= 0) {
+    return false
+  }
+
+  return true
 }

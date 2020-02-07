@@ -1,7 +1,5 @@
 #define BLOCK_H_
 
-#include <iostream>
-
 using namespace std;
 
 class Block {
