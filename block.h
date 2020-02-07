@@ -6,7 +6,7 @@ using namespace std;
 
 class Block {
     
-  public:
+  private:
     int coordinate_x;
     int coordinate_y;
 }

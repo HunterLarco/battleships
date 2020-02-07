@@ -12,10 +12,12 @@ class BattleShip {
   public:
     int health;
     string name;
-    int getCoordinates();
+    bool isHit();
+    bool collision();
     bool isSunk();
 
-    
+  private:
+    bool getCoordinates();
 
 };
 
